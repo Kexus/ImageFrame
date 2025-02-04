@@ -1,0 +1,15 @@
+﻿<Window x:Class="ImageFrame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageFrame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="White" WindowStyle="None" AllowsTransparency="True" ResizeMode="CanResizeWithGrip" MouseLeftButtonDown="Window_MouseLeftButtonDown" Drop="Window_Drop" AllowDrop="True" SizeChanged="Window_SizeChanged" MouseLeftButtonUp="Window_MouseLeftButtonUp" MouseLeave="Window_MouseLeave" MouseEnter="Window_MouseEnter" MouseMove="Window_MouseMove" MouseRightButtonUp="Window_MouseRightButtonUp" Icon="/assets/placeholder.png">
+    <Viewbox x:Name="viewbox" SizeChanged="viewbox_SizeChanged" MouseEnter="Window_MouseEnter">
+        <Grid>
+            <Image x:Name="image" Source="/assets/placeholder.png" RenderOptions.BitmapScalingMode="Fant" Stretch="Fill" />
+        </Grid>
+    </Viewbox>
+    
+</Window>
